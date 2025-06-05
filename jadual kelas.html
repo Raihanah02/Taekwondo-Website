@@ -1,0 +1,198 @@
+<!-- jadual kelas.html.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadual Kelas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+    body {
+      background-color: #fdfcfa;
+      color: #3a2c27;
+      line-height: 1.6;
+      padding-bottom: 100px;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #f4eee6;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #3a2c27;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #8b5e3c;
+    }
+    header {
+      background-image: url('http://t4.ftcdn.net/jpg/01/87/49/31/360_F_187493119_OUzR19NL4gPSZ3wjdQieptG5rhR5E7OT.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 160px 20px 40px;
+      text-align: center;
+      position: relative;
+      color: white;
+      z-index: 0;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .tabs {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .tabs button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #3a2c27;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tabs button:hover {
+      background-color: #5b3e33;
+    }
+    .schedule {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fffaf4;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #f4eee6;
+    }
+    .footer {
+      background-color: #3a2c27;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .social a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="taekwondo.html">Home</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="https://twgame.my.canva.site/3d-taekwondo-educational-game-concept">Game</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact us.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Jadual Kelas</h1>
+    <p>Pilih program untuk melihat jadual kelas</p>
+  </header>
+
+  <div class="tabs">
+    <button onclick="showSchedule('kanak')">Kanak-Kanak</button>
+    <button onclick="showSchedule('remaja')">Remaja</button>
+    <button onclick="showSchedule('dewasa')">Dewasa</button>
+  </div>
+
+  <div class="schedule" id="kanak" style="display:block">
+    <h2>Program Kanak-Kanak</h2>
+    <table>
+      <tr><th>Hari</th><th>Masa</th><th>Lokasi</th></tr>
+      <tr><td>Isnin</td><td>5:00 PM - 6:00 PM</td><td>Dewan Komuniti A</td></tr>
+      <tr><td>Rabu</td><td>5:00 PM - 6:00 PM</td><td>Dewan Komuniti A</td></tr>
+      <tr><td>Khamis</td><td>6:30 PM - 8:00 PM</td><td>Dewan Komuniti B</td></tr>
+      <tr><td>Sabtu</td><td>6:30 PM - 8:00 PM</td><td>Dewan Komuniti B</td></tr>
+    </table>
+  </div>
+
+  <div class="schedule" id="remaja" style="display:none">
+    <h2>Program Remaja</h2>
+    <table>
+      <tr><th>Hari</th><th>Masa</th><th>Lokasi</th></tr>
+      <tr><td>Isnin</td><td>6:30 PM - 8:00 PM</td><td>Dewan Komuniti B</td></tr>
+      <tr><td>Selasa</td><td>6:30 PM - 8:00 PM</td><td>Dewan Komuniti B</td></tr>
+      <tr><td>Sabtu</td><td>6:30 PM - 8:00 PM</td><td>Dewan Komuniti B</td></tr>
+      <tr><td>Ahad</td><td>6:30 PM - 8:00 PM</td><td>Dewan Komuniti B</td></tr>
+    </table>
+  </div>
+
+  <div class="schedule" id="dewasa" style="display:none">
+    <h2>Program Dewasa</h2>
+    <table>
+      <tr><th>Hari</th><th>Masa</th><th>Lokasi</th></tr>
+      <tr><td>Selasa</td><td>8:00 PM - 9:30 PM</td><td>Gimnasium Utama</td></tr>
+      <tr><td>Rabu</td><td>10:00 AM - 11:30 AM</td><td>Gimnasium Utama</td></tr>
+      <tr><td>Khamis</td><td>6:30 PM - 8:00 PM</td><td>Dewan Komuniti B</td></tr>
+      <tr><td>Ahad</td><td>6:30 PM - 8:00 PM</td><td>Dewan Komuniti B</td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Warrior Speed Power Taekwondo Academy.</p>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=100054275330304&sk=photos&locale=ms_MY">Facebook</a>
+      <a href="https://www.instagram.com/wsptcsi/?hl=af">Instagram</a>
+    </div>
+  </div>
+
+  <script>
+    function showSchedule(id) {
+      document.getElementById('kanak').style.display = 'none';
+      document.getElementById('remaja').style.display = 'none';
+      document.getElementById('dewasa').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
+
