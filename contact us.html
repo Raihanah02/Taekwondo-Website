@@ -1,0 +1,172 @@
+<!-- contact us.html.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+    body {
+      background-color: #fdfcfa;
+      color: #3a2c27;
+      line-height: 1.6;
+      padding-bottom: 100px;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #f4eee6;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #3a2c27;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #8b5e3c;
+    }
+    header {
+      background-image: url('https://www.worldtaekwondo.org/ckedt_upload/up_img_md/20220203144210_KakaoTalk_20220203_142122983.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 160px 20px 40px;
+      text-align: center;
+      position: relative;
+      color: white;
+      z-index: 0;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fffaf4;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact-info h2 {
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-info a {
+      color: #3a2c27;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+      color: #8b5e3c;
+    }
+    .map {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+    }
+    .map iframe {
+      border: 0;
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+    }
+    .footer {
+      background-color: #3a2c27;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .social a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="https://twgame.my.canva.site/3d-taekwondo-educational-game-concept">Game</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="jadual kelas.html">Class</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Hubungi Kami</h1>
+    <p>Maklumat untuk menghubungi Kelab Taekwondo</p>
+  </header>
+
+  <div class="contact-info">
+    <h2>Maklumat Perhubungan</h2>
+    <p><strong>📞 Telefon:</strong> <a href="tel:+60123456789">016-7517187</a></p>
+    <p><strong>📘 Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100054275330304&sk=photos&locale=ms_MY" target="_blank" rel="noopener noreferrer">https://www.facebook.com/profile.php?id=100054275330304&sk=photos&locale=ms_MY</a></p>
+    <p><strong>📸 Instagram:</strong> <a href="https://www.instagram.com/wsptcsi/?hl=af" target="_blank" rel="noopener noreferrer">https://www.instagram.com/wsptcsi/?hl=af</a></p>
+  </div>
+
+  <div class="map">
+    <iframe
+      width="520"
+      height="400"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+      id="gmap_canvas"
+      src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Warriors%20Speed%20Power%20Taekwondo%20Academy%20(SI),%20No%2090%20Tingkat,%201,%20Persiaran%20SIBC%201,%20Bandar%20Seri%20Iskandar,%2032610%20Seri%20Iskandar,%20Perak%22%20ke%20%22Warriors%20Speed%20Power%20Taekwondo%20Academy%20(SI),%20No%2090%20Tingkat,%201,%20Persiaran%20SIBC%201,%20Bandar%20Seri%20Iskandar,%2032610%20Seri%20Iskandar,%20Perak%20Arau+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    ></iframe>
+    <a href="https://www.acadoo.de/leistungen/ghostwriter-doktorarbeit/">Dissertation schreiben lassen</a>
+    <script
+      type="text/javascript"
+      src="https://embedmaps.com/google-maps-authorization/script.js?id=7a6f729476e1efe1eda8ddc1e120d48006d6326b"
+    ></script>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Warrior Speed Power Taekwondo Academy.</p>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=100054275330304&sk=photos&locale=ms_MY">Facebook</a>
+      <a href="https://www.instagram.com/wsptcsi/?hl=af">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
